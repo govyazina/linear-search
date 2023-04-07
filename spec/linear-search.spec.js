@@ -16,5 +16,7 @@ describe("globalLinearSearch()", function() {
     let item = 'a';
     let arr = ['b', 'a', 'n', 'a', 'n', 'a', 's'];
     expect(globalLinearSearch(item, arr)).toEqual([1, 3, 5]);
+    expect(globalLinearSearch(2, arr)).toEqual([]);
+    expect(globalLinearSearch('s', arr)).toEqual([6]);
   });
 });
