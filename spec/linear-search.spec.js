@@ -5,6 +5,9 @@ describe("linearSearch()", function() {
     let item = 3;
     let arr = [1,2,3,4,5];
     expect(linearSearch(item, arr)).toEqual(2);
+    expect(linearSearch(0, arr)).toEqual(-1);
+    expect(linearSearch(0, [])).toEqual(-1);
+    expect(linearSearch('d', [1, 2, 'd'])).toEqual(2);
   });
 });
 
